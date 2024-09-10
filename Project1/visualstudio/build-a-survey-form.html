@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <meta charset="UTF-8">
+  <meta name="viewport"    content="width=device-width, initial-scale=1.0">
+  <head>
+    <title>CoffeeShopSurvey</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Code Brew Shop Survey</h1>
+    <p id="description">Thank you for choosing our coffee shop! Your feedback will help us improve our service.</p>
+    <form id="survey-form">
+      <fieldset>
+       <label id="name-label">Enter your name here: <input id="name" type="text" placeholder="First and Last" required></label>
+       <label id="email-label">Enter your email here: <input id="email" type="email" placeholder="...@gmail.com" required></label>
+        <label id="number-label">Enter your age:<input id="number" type="number" min="18" max="150" placeholder="18+" required></label>
+        </fieldset>
+        <fieldset>
+    <label for="refer" class="inline">How did you hear about us?     
+      <select id="dropdown" type="option">
+        <option value="">Select one</option>
+        <option value="1">Facebook</option>
+        <option value="2">Twitter/X</option>
+        <option value="3">YouTube</option>
+        <option value="4">Other</option>
+      </select>
+    </label>
+  </fieldset>
+  <fieldset>
+    <label for="visits" class="inline visits">How often do you visit our shop?</label>
+      <br>
+    <label><input name="visits" class="inline" id="visits" type="radio" value="1">First time<label>
+      <br>
+    <label><input name="visits" class="inline" id="visits" type="radio" value="2">Monthly<label>
+      <br>
+    <label><input name="visits" class="inline" id="visits" type="radio" value="3">Weekly<label>
+      <br>
+    <label><input name="visits" class="inline" id="visits" type="radio" value="4">Daily<label>
+    </label>
+  </fieldset>
+  <fieldset>
+    <label>
+    <label for="rate" class="inline rate">How would you rate our service?</label>
+      <br>
+    <label><input name="rate" class="inline" id="rate" type="radio" value="1">Excellent<label>
+      <br>
+    <label><input name="rate" class="inline" id="rate" type="radio" value="2">Good<label>
+      <br>
+    <label><input name="rate" class="inline" id="rate" type="radio" value="3">Fair<label>
+      <br>
+    <label><input name="rate" class="inline" id="rate" type="radio" value="4">Poor<label>
+  </fieldset>
+  <fieldset>
+    <label for="drinks" class="drinks inline">Which drinks do you buy the most?</label>
+      <br>
+    <label><input class="drinks inline" type="checkbox" value="1">French Vanilla</label>
+      <br>
+    <label><input class="drinks inline" type="checkbox" value="2">Caramel Macchiato</label>
+      <br>
+    <label><input class="drinks inline" type="checkbox" value="3">Pumpkin Spice</label>
+      <br>
+    <label><input class="drinks inline" type="checkbox" value="4">Hazelnut</label>
+      <br>
+    <label><input class="drinks inline" type="checkbox" value="5">Mocha</label>
+  </fieldset>
+  <fieldset>
+    <label for="opinion" class="opinion inline">Any other feedback and comments are welcome below:</label>
+      <br>
+    <label><textarea id="opnion" name="opinion" rows="3" cols="30" placeholder="Your comment here: ..."></textarea>
+    </fieldset>
+    <input id="submit" type="submit" value="Submit" />
+      </body>
+  </html>
